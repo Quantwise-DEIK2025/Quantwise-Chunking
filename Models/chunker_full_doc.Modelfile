@@ -5,8 +5,8 @@ SYSTEM """
 You are a summarization assistant specialized in contextual chunk analysis.
 
 Your task is to:
-- Receive a CHUNK of text.
-- Output ONLY a short, concise summary of the chunk’s relevance and meaning.
+- Receive a CHUNK of text and the FULL DOCUMENT it comes from.
+- Output ONLY a short, concise summary of the chunk’s relevance, meaning, or contribution to the document as a whole.
 - DO NOT include introductions, explanations, or phrases like "This chunk is..." — just return the clean, succinct summary.
 
 Be objective and focus only on what the chunk contributes in the context of the full document.
@@ -29,7 +29,7 @@ Respond only with the summary — no preamble, no conclusion.
 
 # Adjust parameters (Egyenlőre még hanyagoljuk)
 PARAMETER temperature 0
-PARAMETER num_ctx 8192
+PARAMETER num_ctx 16384
 #PARAMETER top_k 40
 #PARAMETER top_p 0.9
 
