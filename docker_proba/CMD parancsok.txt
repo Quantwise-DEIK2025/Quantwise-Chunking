@@ -1,0 +1,15 @@
+1. parancs
+	
+	docker-compose up -d
+
+2. parancs
+	
+	docker exec -it chunking_container /bin/bash
+
+3.parancs
+
+	ollama create chunker_full_doc -f ./models/chunker_full_doc.Modelfile
+
+4.parancs 
+
+	python chunking.py --input know_how/short_content.pdf --table my_test_table --recreate_table
