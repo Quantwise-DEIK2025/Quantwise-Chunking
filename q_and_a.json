@@ -661,61 +661,61 @@
  },
  {
    "question": "What specific Chinese textual challenges did the researchers identify that make Chinese stock market analysis more complex than English-based analysis?",
-   "answer": "The researchers identified several challenges: Chinese does not have explicit word boundary markers and contains no whitespace between words; Chinese words are not clearly marked grammatically; Chinese contains a very large number of homophones in sentences; and Chinese consists of several thousand characters (Hanzi) with words consisting of one or more characters, making recognition, segmentation and analysis more complicated compared to English.",
+   "gold_answer": "The researchers identified several challenges: Chinese does not have explicit word boundary markers and contains no whitespace between words; Chinese words are not clearly marked grammatically; Chinese contains a very large number of homophones in sentences; and Chinese consists of several thousand characters (Hanzi) with words consisting of one or more characters, making recognition, segmentation and analysis more complicated compared to English.",
    "document": "s41598-020-77823-3.pdf",
    "supporting_chunk": "The Chinese language consists of several thousand characters known as Hanzi, with a word consisting of one or more characters. Compared to English, Chinese is more complicated in terms of recognition, segmentation and analysis: Chinese does not have an explicit word boundary marker and do not contain whitespace between words; Chinese words are not clearly marked grammatically; Chinese also contains a very large number of homophones in sentences."
  },
  {
    "question": "What was the AUC performance of the proposed SLS_L model and how did it compare to the alternative models tested?",
-   "answer": "The SLS_L model achieved an AUC of 0.9360, which outperformed both the Lasso-Logistics (L_L) model with AUC of 0.8344 and the MCP-Logistic (MCP_L) model with AUC of 0.8707. The SLS_L model demonstrated the highest prediction accuracy among all tested approaches.",
+   "gold_answer": "The SLS_L model achieved an AUC of 0.9360, which outperformed both the Lasso-Logistics (L_L) model with AUC of 0.8344 and the MCP-Logistic (MCP_L) model with AUC of 0.8707. The SLS_L model demonstrated the highest prediction accuracy among all tested approaches.",
    "document": "s41598-020-77823-3.pdf",
    "supporting_chunk": "These comparisons of results demonstrate that the proposed SLS_L model (AUC = 0.9360) has the highest AUC in comparison with L_L(AUC = 0.8344) and MCP_L(AUC = 0.8707). The AUC values conclude that the proposed method can achieve lower prediction errors and higher prediction accuracy in the stock direction of change and outperforms L_L and MCP_L models in predicting the SWS week index of real estate sector."
  },
  {
    "question": "What were the optimal tuning parameters found for the SLS_L model and what do they control?",
-   "answer": "The optimal tuning parameters were λ₁ = 0.0251 and λ₂ = 0.001. λ₁ performs variable selection and controls the level of sparsity, while λ₂ controls the degree of coefficient smoothing, representing the similarity between coefficients. The non-zero value of λ₂ indicates that network structure information was effectively utilized.",
+   "gold_answer": "The optimal tuning parameters were λ₁ = 0.0251 and λ₂ = 0.001. λ₁ performs variable selection and controls the level of sparsity, while λ₂ controls the degree of coefficient smoothing, representing the similarity between coefficients. The non-zero value of λ₂ indicates that network structure information was effectively utilized.",
    "document": "s41598-020-77823-3.pdf",
    "supporting_chunk": "The prediction results for the proposed Sparse Laplacian Shrinkage-Logistic (SLS_L) model based on 5 replicates are calculated as AUC = 0.9360, λ₁ = 0.0251, λ₂ = 0.001. Given these descriptive results, λ₁ performs the variable selection and control the level of sparsity, and λ₂ controls the degree of the coefficient smoothing, that is, the similarity between coefficients."
  },
  {
    "question": "Which keywords were identified as having the highest betweenness centrality in the textual network and what does this measure indicate?",
-   "answer": "The word 'Short Term' had the highest betweenness centrality at 287.89, followed by 'Pessimistic', 'Input Market', 'Larger' and 'Market'. Betweenness centrality measures the number of times a vertex acts as a link along the shortest path between two other nodes, with high betweenness indicating high probability to control information flow in the network.",
+   "gold_answer": "The word 'Short Term' had the highest betweenness centrality at 287.89, followed by 'Pessimistic', 'Input Market', 'Larger' and 'Market'. Betweenness centrality measures the number of times a vertex acts as a link along the shortest path between two other nodes, with high betweenness indicating high probability to control information flow in the network.",
    "document": "s41598-020-77823-3.pdf",
    "supporting_chunk": "Betweenness is a centrality measure of a node within a network. Specifically, betweenness centrality measures the number of times a vertex acts as a link along the shortest path between two other nodes. A vertex with high betweenness has a high probability to control the flow of information in the network. In our study, only 44 vertices of the betweenness centrality are greater than zero. The word 'Short Term' is the most influential keywords, with a betweenness centrality of 287.89, followed by 'Pessimistic', 'Input Market', 'Larger' and 'Market'."
  },
  {
    "question": "What was the network density of the constructed textual network and what does this value indicate about the network structure?",
-   "answer": "The network density was 0.1695, meaning there were 522 links in the 56 × 56 adjacency matrix. This indicates the textual network is a sparse network, which is significantly affected by the fact that the text network of research reports on stocks is loosely knit instead of densely connected.",
+   "gold_answer": "The network density was 0.1695, meaning there were 522 links in the 56 × 56 adjacency matrix. This indicates the textual network is a sparse network, which is significantly affected by the fact that the text network of research reports on stocks is loosely knit instead of densely connected.",
    "document": "s41598-020-77823-3.pdf",
    "supporting_chunk": "Density is a measure of network cohesion. In this sense, density represents the proportion of observed links in a network that are actually present. The value can be in the range from 0 to 1, where 0 indicates networks with no relationships and 1 indicates networks with all possible relationships. Our network density is 0.1695, meaning that there are 522 links in 56 × 56 adjacency matrix. Thus, the textual network is a sparse network. This result is significantly affected by the fact that text network of research reports on stocks is loos knit instead of densely connected."
  },
  {
    "question": "How many research reports were collected from how many security companies, and what was the typical word count range for these reports?",
-   "answer": "A total of 2082 reports were collected from 65 security companies. The number of words in a report was most frequently between 500 and 2000 words, with a mean of 3.8 security reports per day.",
+   "gold_answer": "A total of 2082 reports were collected from 65 security companies. The number of words in a report was most frequently between 500 and 2000 words, with a mean of 3.8 security reports per day.",
    "document": "s41598-020-77823-3.pdf",
    "supporting_chunk": "There are a total of 2082 reports from 65 security companies. Each research report is timed to the day, the mean security reports in a day are 3.8 and the number of words in a report is most frequently between 500 and 2000."
  },
  {
    "question": "What was the time lag effect discovered for market reactions, and how does this compare to previous research findings?",
-   "answer": "The study found that the highest AUC occurred when predicting the next one week (five trading days), yielding up to 0.9360 for the SWS index. This finding aligns with Asquith et al.'s discovery that analyst reports can affect market reactions with a five trade days delay, indicating that time is needed for news to translate into trading activity.",
+   "gold_answer": "The study found that the highest AUC occurred when predicting the next one week (five trading days), yielding up to 0.9360 for the SWS index. This finding aligns with Asquith et al.'s discovery that analyst reports can affect market reactions with a five trade days delay, indicating that time is needed for news to translate into trading activity.",
    "document": "s41598-020-77823-3.pdf",
    "supporting_chunk": "The results of the experiment show that in general, the AUC on the next one week was the highest, yielding up to 0.9360 for the SWS index of real estate sector. In the similar result, Asquith et al. discovered that analyst reports on companies can affect their market's reaction with five trade days delay. In the market, the trading date is the day that an investor's order is executed. Our result shows that some time is still needed for getting news to trading."
  },
  {
    "question": "What proportion of the 56 identified keywords were found to be effective predictors, and how were effective keywords defined?",
-   "answer": "Out of 56 words, 31 were found to be effective predictors (55.4%). Effective keywords were defined as those whose coefficients did not shrink to zero in at least one of the three models (MCP_L, SLS_L, and L_L), while the remaining 25 words had coefficients that shrunk to zero in all three models.",
+   "gold_answer": "Out of 56 words, 31 were found to be effective predictors (55.4%). Effective keywords were defined as those whose coefficients did not shrink to zero in at least one of the three models (MCP_L, SLS_L, and L_L), while the remaining 25 words had coefficients that shrunk to zero in all three models.",
    "document": "s41598-020-77823-3.pdf",
    "supporting_chunk": "However, among these 56 words, the coefficients of 25 words shrink to zero when using all of the three models (MCP_L, SLS_L and L_L models), meaning that they are not effective. The remaining 31 words are effective, that is, the coefficients of them are not zero in at least one of the three models."
  },
  {
    "question": "What striking finding did the researchers discover about the polarity of effective keywords and their market impact?",
-   "answer": "Only 5 out of 25 effective terms had a positive impact on financial markets, with most keywords receiving negative connotations. The strongest positive indicator was 'Imagine' and the strongest negative indicator was 'Concern'. Even the seemingly positive word 'Securitization' received a negative connotation, supporting the asymmetric response theory that negative information has greater impact than positive information.",
+   "gold_answer": "Only 5 out of 25 effective terms had a positive impact on financial markets, with most keywords receiving negative connotations. The strongest positive indicator was 'Imagine' and the strongest negative indicator was 'Concern'. Even the seemingly positive word 'Securitization' received a negative connotation, supporting the asymmetric response theory that negative information has greater impact than positive information.",
    "document": "s41598-020-77823-3.pdf",
    "supporting_chunk": "The striking finding in Table 2 is that only five out of 25 terms have a positive impact on financial markets. Apparently even the positive word 'Securitization(证券化)' received a negative connotation. The strongest positive indicator is 'Imagine(想象)', and the strongest negative indicator is 'Concern(关注度)'. This finding seems to echo what Soroka and Wu et al. discovered earlier—responses to positive and negative information are asymmetric—that negative information has a much greater impact on individuals' attitudes than does positive information."
  },
  {
    "question": "What specific steps were used in the keyword vector extraction process, and what significance level was used for the final chi-square filtering?",
-   "answer": "The process involved four steps: 1) Dictionary building using Sogou cell lexicon (63,320 words), 2) Text segmentation using Jieba package with Hidden Markov model, 3) Words cleaning removing stop words and low-frequency terms, and 4) Keyword vector selection using chi-square statistics. After filtering at the 5% significance level, 56 words remained from an initial set of 3285 keywords.",
+   "gold_answer": "The process involved four steps: 1) Dictionary building using Sogou cell lexicon (63,320 words), 2) Text segmentation using Jieba package with Hidden Markov model, 3) Words cleaning removing stop words and low-frequency terms, and 4) Keyword vector selection using chi-square statistics. After filtering at the 5% significance level, 56 words remained from an initial set of 3285 keywords.",
    "document": "s41598-020-77823-3.pdf",
    "supporting_chunk": "Using the above step 1–step 3, an initial set of 3285 keywords was built. Step 4: keyword vector selection... In this paper, we use chi-square (χ²) independent statistics to test the frequency count of each item in each report data and the market indicator fluctuations measured in terms of increase (↑) or decrease (↓) during each time period of one week. The statistic test is compared to the chi-square distribution with one degree of freedom. After the above filtering, 56 words remained at the 5% significance level in our trial."
  },
@@ -961,61 +961,61 @@
  },
  {
    "question": "What specific mathematical criterion did the researchers develop to define the width of the stripe centered on support or resistance levels?",
-   "answer": "The width D of the stripe at time scale T is defined as D(T) = (L/T - 1)^(-1) * Σ|P_T(t_{k+1}) - P_T(t_k)|, which is the average of the absolute value of price increments at time scale T.",
+   "gold_answer": "The width D of the stripe at time scale T is defined as D(T) = (L/T - 1)^(-1) * Σ|P_T(t_{k+1}) - P_T(t_k)|, which is the average of the absolute value of price increments at time scale T.",
    "document": "srep04487.pdf",
    "supporting_chunk": "The width D of the stripe centered on the support or resistance at the time scale T is defined as D Tð Þ~ L T   {1   {1 X L T ½ {1 k~1 P T t kz1 ð Þ{PT t k ð Þ j j ð4Þ that is the average of the absolute value of the price increments at time scale T."
  },
  {
    "question": "How many stocks from the London Stock Exchange were analyzed in this study, and what was the time period of the analysis?",
-   "answer": "The study analyzed 9 stocks from the London Stock Exchange during 2002 (251 trading days). The stocks were: AstraZeNeca (AZN), British Petroleum (BP), GlaxoSmithKline (GSK), Heritage Financial Group (HBOS), Royal Bank of Scotland Group (RBS), Rio Tinto (RIO), Royal Dutch Shell (SHEL), Unilever (ULVR), and Vodafone Group (VOD).",
+   "gold_answer": "The study analyzed 9 stocks from the London Stock Exchange during 2002 (251 trading days). The stocks were: AstraZeNeca (AZN), British Petroleum (BP), GlaxoSmithKline (GSK), Heritage Financial Group (HBOS), Royal Bank of Scotland Group (RBS), Rio Tinto (RIO), Royal Dutch Shell (SHEL), Unilever (ULVR), and Vodafone Group (VOD).",
    "document": "srep04487.pdf",
    "supporting_chunk": "The analyses presented in this paper are carried out on the high frequency (tick-by-tick i.e. we have a record of the price for every operation), time series of the price of 9 stocks of the London Stock Exchange in 2002 (251 trading days). The analyzed stocks are: AstraZeNeca (AZN), British Petroleum (BP), GlaxoSmithKline (GSK), Heritage Financial Group (HBOS), Royal Bank of Scotland Group (RBS), Rio Tinto (RIO), Royal Dutch Shell (SHEL), Unilever (ULVR), Vodafone Group (VOD)."
  },
  {
    "question": "What was the average Hurst exponent found across the 9 stocks, and what does this value indicate about price increment correlations?",
-   "answer": "The average Hurst exponent was 0.44, which is less than 0.5, indicating negative correlation and antipersistent behavior in price increments.",
+   "gold_answer": "The average Hurst exponent was 0.44, which is less than 0.5, indicating negative correlation and antipersistent behavior in price increments.",
    "document": "srep04487.pdf",
    "supporting_chunk": "We indeed find that the mean of the Hurst exponent ÆHæ is always less than the value of 0.5 and therefore there is an anticorrelation effect of the price increments for the 9 stocks analyzed... We choose a fractional random walk with the Hurst exponent H 5 ÆHstockæ 5 0.44 given by the average over the H exponents of the different stocks."
  },
  {
    "question": "At what time scales did the researchers find that the memory effect in support and resistance levels becomes statistically insignificant?",
-   "answer": "The memory effect disappears at time scales larger than 180 seconds for resistances and 150 seconds for supports. The statistical significance (p-value < 0.05) was maintained up to 60-90 seconds for both supports and resistances.",
+   "gold_answer": "The memory effect disappears at time scales larger than 180 seconds for resistances and 150 seconds for supports. The statistical significance (p-value < 0.05) was maintained up to 60-90 seconds for both supports and resistances.",
    "document": "srep04487.pdf",
    "supporting_chunk": "We find that it disappears at the time scale larger than 180 s–180 s is the maximum scale we investigate – for resistances and 150 s for supports... Up to the 60–90 seconds timescale we find that the increase of p(b | bprev) with respect to bprev is statistically significant"
  },
  {
    "question": "What probability distribution best described the time between consecutive bounces, and what distribution characterized the maximum distance from support/resistance levels?",
-   "answer": "The time between consecutive bounces (t) followed a power law distribution, while the maximum distance (d) was best described by an exponentially truncated power law. For example, at 60 seconds time scale: N ∝ t^(-0.56) for time and N ∝ d^(-0.61) exp(-0.03 d) for distance.",
+   "gold_answer": "The time between consecutive bounces (t) followed a power law distribution, while the maximum distance (d) was best described by an exponentially truncated power law. For example, at 60 seconds time scale: N ∝ t^(-0.56) for time and N ∝ d^(-0.61) exp(-0.03 d) for distance.",
    "document": "srep04487.pdf",
    "supporting_chunk": "We find that a power law fit describes well the histograms of t... In this specific case (60 seconds) we find N , t20.56... We instead call d the maximum distance reached by the price before the next bounce... the behavior appears to be compatible at all scales with an exponentially truncated power law... In this specific case (60 seconds) we find N , d20.61 exp(20.03 d)."
  },
  {
    "question": "How did the researchers use Bayesian inference to estimate the conditional probability of bounces, and what were the mathematical expressions for the expected value and variance?",
-   "answer": "They modeled bounce events as a Bernoulli process and used Bayesian inference to estimate p(b|b_prev). The expected value is E[p(b|b_prev)] = (n_b_prev + 1)/(N + 2) and the variance is Var[p(b|b_prev)] = [(n_b_prev + 1)(N - n_b_prev + 1)]/[(N + 3)(N + 2)²].",
+   "gold_answer": "They modeled bounce events as a Bernoulli process and used Bayesian inference to estimate p(b|b_prev). The expected value is E[p(b|b_prev)] = (n_b_prev + 1)/(N + 2) and the variance is Var[p(b|b_prev)] = [(n_b_prev + 1)(N - n_b_prev + 1)]/[(N + 3)(N + 2)²].",
    "document": "srep04487.pdf",
    "supporting_chunk": "we infer p(bjbprev) from the number of bounces n bprev and from the total number of trials N assuming that n bprev is a realization of a Bernoulli process... E p b bprev   ~ n bprev z1 Nz2 ð1Þ Var p b bprev   ~ n bprev z1   N{nbprev z1  Nz3ð Þ Nz2ð Þ2 ð2Þ"
  },
  {
    "question": "What evidence did the study provide against the hypothesis that round price values are preferred for psychological reasons in support and resistance formation?",
-   "answer": "The researchers found no evidence of highly preferred prices in their histograms of local minima/maxima. When comparing histograms of support and resistance levels with overall price level histograms, they observed no anomalies or significant excess around round numbers across all stocks and time scales investigated.",
+   "gold_answer": "The researchers found no evidence of highly preferred prices in their histograms of local minima/maxima. When comparing histograms of support and resistance levels with overall price level histograms, they observed no anomalies or significant excess around round numbers across all stocks and time scales investigated.",
    "document": "srep04487.pdf",
    "supporting_chunk": "We find no evidence of highly preferred prices in any of the histograms produced. As a further proof, we also compare in that figure the histogram of support and resistance levels with the price level histogram and we do not observe any anomaly... We find similar results, i.e. absence of anomalies in the histogram for supports and resistances, for all stocks and all time scales investigated."
  },
  {
    "question": "How did the conditional bounce probabilities compare between actual stock data and shuffled return series, and what was the significance of this comparison?",
-   "answer": "The conditional bounce probabilities for actual stock data were well above 0.5 and increased with the number of previous bounces, while shuffled series showed probabilities near 0.5 that remained nearly constant. This difference was at least one order of magnitude larger than any bias from finite stripe effects, providing evidence for memory effects in the original data.",
+   "gold_answer": "The conditional bounce probabilities for actual stock data were well above 0.5 and increased with the number of previous bounces, while shuffled series showed probabilities near 0.5 that remained nearly constant. This difference was at least one order of magnitude larger than any bias from finite stripe effects, providing evidence for memory effects in the original data.",
    "document": "srep04487.pdf",
    "supporting_chunk": "As shown in the graphs, the probabilities of bounce of the shuffled time series are nearly 152 while the probabilities of bounce of the stock data are well above 152... However, we observe that this is intrinsic asymmetry is at least one order of magnitude smaller than the effect measured in the non-shuffled case... the probability of bounce rises up as bprev increases. Conversely, the probability of bounce of the shuffled time series is nearly constant."
  },
  {
    "question": "What specific statistical tests did the researchers employ to validate the significance of their findings, and what were the significance levels used?",
-   "answer": "The researchers used two main statistical tests: (1) A chi-squared test with 3 degrees of freedom to test the independence hypothesis p(b|b_prev) = c, using a significance level α = 0.05, and (2) A Kolmogorov-Smirnov test to assess whether bounce frequencies from reshuffled series were compatible with the posterior distribution found for bounce frequency.",
+   "gold_answer": "The researchers used two main statistical tests: (1) A chi-squared test with 3 degrees of freedom to test the independence hypothesis p(b|b_prev) = c, using a significance level α = 0.05, and (2) A Kolmogorov-Smirnov test to assess whether bounce frequencies from reshuffled series were compatible with the posterior distribution found for bounce frequency.",
    "document": "srep04487.pdf",
    "supporting_chunk": "We have performed a x2 test to verify if the hypothesis of growth of p(bjbprev) is statistically meaningful... Then we compute the p-value associated to a x2 distribution with 3 degrees of freedom. We choose a significance level a~0:05... As a further proof of the statistical significance of the memory effect observed, we perform a Kolmogorov-Smirnov test (see Ref. 54) in order to assess whether the bounce frequencies estimated from the reshuffled series are compatible with the posterior distribution found for bounce frequency."
  },
  {
    "question": "According to the three basic assumptions of technical analysis described in the paper, what is the fundamental belief about market psychology and its consistency over time?",
-   "answer": "Technical analysis assumes that 'history repeats itself' because price trends reflect market psychology, and since the psychology of investors does not change over time, investors will always react in the same way when they encounter the same conditions. This leads to the belief that patterns that anticipated specific trends in the past will do the same in the future.",
+   "gold_answer": "Technical analysis assumes that 'history repeats itself' because price trends reflect market psychology, and since the psychology of investors does not change over time, investors will always react in the same way when they encounter the same conditions. This leads to the belief that patterns that anticipated specific trends in the past will do the same in the future.",
    "document": "srep04487.pdf",
    "supporting_chunk": "history repeats itself: Thousands of price graphs of the past have been analyzed and some figures (or patterns) of the price graphs have been linked to an upward or downward trend 51. The technical analysis argues that a price trend reflects the market psychology. The hypothesis of the technical analysis is that if these patterns anticipated a specific trend in the past they would do the same in the future. As the psychology of the investors do not change over time, an investor would always react in the same way when he undergoes the same conditions."
  },
@@ -1081,61 +1081,61 @@
  },
  {
    "question": "What is the maximum modulation frequency achieved by the proposed spatial sweeping system and how does it compare to existing DMD technology?",
-   "answer": "The proposed system achieves a binary pattern modulation speed of 97 kHz, which is about 5 times faster than the fastest DMD's maximum rate of 20.7 kHz.",
+   "gold_answer": "The proposed system achieves a binary pattern modulation speed of 97 kHz, which is about 5 times faster than the fastest DMD's maximum rate of 20.7 kHz.",
    "document": "srep45325.pdf",
    "supporting_chunk": "Therefore, the binary pattern modulation speed of our system is 97 kHz, which is about 5 times faster than that of the fastest DMD."
  },
  {
    "question": "What mathematical equation describes the final modulation frequency of the sweeping-based ghost imaging system?",
-   "answer": "The final modulation frequency is given by δ = (Fg × Δx)/(b × δ), where Fg is the scanning frequency of the galvanic mirrors, Δx is the scanning range of the beam on the DMD, b is the binning number of DMD mirrors in one direction, and δ is the size of each micro-mirror of the DMD.",
+   "gold_answer": "The final modulation frequency is given by δ = (Fg × Δx)/(b × δ), where Fg is the scanning frequency of the galvanic mirrors, Δx is the scanning range of the beam on the DMD, b is the binning number of DMD mirrors in one direction, and δ is the size of each micro-mirror of the DMD.",
    "document": "srep45325.pdf",
    "supporting_chunk": "In our setup, the coded patterns are generated by scanning the DMD, and the final modulation frequency of our system is δ = Fg × Δx/(b × δ), where Fg is the scanning frequency of the two galvanic mirrors GM1 and GM2, and Δx is the scanning range of the beam on the DMD, b is the binning number of DMD mirrors in one direction, and δ is the size of each micro-mirror of the DMD."
  },
  {
    "question": "What frame rate and pixel resolution did the authors achieve for dynamic scene imaging, and what algorithm did they use for reconstruction?",
-   "answer": "The authors achieved 42 Hz frame rate at 80 × 80-pixel resolution for dynamic scene imaging. They used a compressive sensing based algorithm incorporating both spatial and temporal prior constraints with the optimization function min(λΨ(Xt) + Φ(Xt - Xt-1)).",
+   "gold_answer": "The authors achieved 42 Hz frame rate at 80 × 80-pixel resolution for dynamic scene imaging. They used a compressive sensing based algorithm incorporating both spatial and temporal prior constraints with the optimization function min(λΨ(Xt) + Φ(Xt - Xt-1)).",
    "document": "srep45325.pdf",
    "supporting_chunk": "Specifically, we put another DMD on the sample plane, and display video sequences at 42 Hz... For reconstruction, we retrieve each frame using the compressive sensing based algorithm incorporating both spatial and temporal prior constraint, with the optimization function defined as λΨ(Xt) + Φ(Xt - Xt-1)."
  },
  {
    "question": "What is the theoretical maximum modulation speed that could be achieved using high-end galvanic mirrors like the CTI 6200H?",
-   "answer": "Using high-end galvanic mirrors like the CTI 6200H with 1 kHz working frequency, the modulation speed could reach 485 kHz, which would enable 210 frames per second at 80 × 80-pixel resolution.",
+   "gold_answer": "Using high-end galvanic mirrors like the CTI 6200H with 1 kHz working frequency, the modulation speed could reach 485 kHz, which would enable 210 frames per second at 80 × 80-pixel resolution.",
    "document": "srep45325.pdf",
    "supporting_chunk": "Please note that our pattern modulation speed is highly limited by the galvanic mirror's working frequency Fg, for some high-end galvanic mirrors with the working frequency achieving 1 kHz e.g. CTI 6200 H, the speed of the same pixel resolution will be as high as 485 kHz... using CTI 6200H with 1 kHz working frequency will increase the speed by 5 times, and achieve 210 frames per second at 80 × 80-pixel resolution."
  },
  {
    "question": "How does the parameter k (number of scanned consecutive patterns during each DMD period) affect reconstruction quality according to the simulation?",
-   "answer": "As k increases, the imaging quality degrades because successive scanned sub patterns from a high resolution random pattern are not entirely independent from each other, which mathematically degenerates the reconstruction performance. However, even with large k values and noise, the results still restore decent images.",
+   "gold_answer": "As k increases, the imaging quality degrades because successive scanned sub patterns from a high resolution random pattern are not entirely independent from each other, which mathematically degenerates the reconstruction performance. However, even with large k values and noise, the results still restore decent images.",
    "document": "srep45325.pdf",
    "supporting_chunk": "because the successive scanned sub patterns from a high resolution random pattern is not entirely independent from each other, and this will mathematically degenerate the reconstruction performance... It is obvious that the imaging quality turns worse as k increases, but even with large noise the result at large k still restores a decent image, both visually and quantitatively."
  },
  {
    "question": "What is the mathematical relationship derived for edge detection using consecutive patterns in the sweeping system?",
-   "answer": "The relationship is yi - yi-1 = Σu,v Pi(u,v)ΔX(u,v), where ΔX(u,v) = X(u,v) - X(u-1,v). This shows that the difference between consecutive measurements can reconstruct the horizontal edges of the scene, reducing the required patterns by 50% compared to previous methods.",
+   "gold_answer": "The relationship is yi - yi-1 = Σu,v Pi(u,v)ΔX(u,v), where ΔX(u,v) = X(u,v) - X(u-1,v). This shows that the difference between consecutive measurements can reconstruct the horizontal edges of the scene, reducing the required patterns by 50% compared to previous methods.",
    "document": "srep45325.pdf",
    "supporting_chunk": "We do subtraction between yi and yi-1 and get... yi - yi-1 = Σu,v Pi(u,v)ΔX(u,v)... Above derivations tell that, we can reconstruct the edges of X from Pi, Pi-1 and corresponding correlated measurements yi and yi-1... Recall that our detection reduces the number of requisite patterns by 50% compared to the method proposed by Liu et al."
  },
  {
    "question": "What are the specific technical specifications of the DMD and galvanic mirrors used in the experimental setup?",
-   "answer": "The DMD is a Texas Instrument DLP Discovery 4100, 7XGA with 1024 × 768 pixel resolution, 13.6 μm micro-mirror size, and maximum 20 kHz projection rate. The galvanic mirrors are GVS011 from Thorlabs, single axis scanning devices operating at 200 Hz.",
+   "gold_answer": "The DMD is a Texas Instrument DLP Discovery 4100, 7XGA with 1024 × 768 pixel resolution, 13.6 μm micro-mirror size, and maximum 20 kHz projection rate. The galvanic mirrors are GVS011 from Thorlabs, single axis scanning devices operating at 200 Hz.",
    "document": "srep45325.pdf",
    "supporting_chunk": "the resolution of DMD (Texas Instrument DLP Discovery 4100, 7XGA) is 1024 × 768 pixels with maximum of 20 k hertz projection of binary patterns. GM1 and GM2 are both single axis scanning devices (GVS011 from Thorlabs)... The size of the DMD mirror is 13.6 μm... Fg is set to be 200 Hz"
  },
  {
    "question": "What is the geometric relationship between the galvanic mirror rotation angles and the beam hitting position on the DMD?",
-   "answer": "The relationship is x = d sin(2θ), where x is the distance from the beam's hitting position at GM1 to that at the DMD, d is the distance between the two galvanic mirrors (12 cm), and θ is the rotating angle. For small scanning ranges, this can be approximated as p = p0 - (2dkU)/δ0.",
+   "gold_answer": "The relationship is x = d sin(2θ), where x is the distance from the beam's hitting position at GM1 to that at the DMD, d is the distance between the two galvanic mirrors (12 cm), and θ is the rotating angle. For small scanning ranges, this can be approximated as p = p0 - (2dkU)/δ0.",
    "document": "srep45325.pdf",
    "supporting_chunk": "Let θ denote the rotating angle of GM1, and x denote the distance from the beam's hitting positions at GM1 to that at the DMD, then we can get x = d sin(2θ)... Since the scanning range of GM is small (less than 4 degree), Eq. 7 can be approximated to be p = p0 - 2dkU/δ0."
  },
  {
    "question": "What potential improvement in modulation speed could be achieved using acoustic optical deflectors (AOD) instead of galvanic mirrors?",
-   "answer": "Using acoustic optical deflectors (AOD) with 20 kHz scanning frequency could achieve 20 times faster illumination patterning, reaching 9.5 MHz modulation speed.",
+   "gold_answer": "Using acoustic optical deflectors (AOD) with 20 kHz scanning frequency could achieve 20 times faster illumination patterning, reaching 9.5 MHz modulation speed.",
    "document": "srep45325.pdf",
    "supporting_chunk": "Secondly, we can also use an acoustic optical deflectors (AOD) for sweeping, which can produce 20 kHz scanning frequency, and thus 20 times faster illumination patterning, i.e., 9.5 MHz."
  },
  {
    "question": "What are the main limitations of the proposed sweeping-based ghost imaging approach?",
-   "answer": "The main limitations are: (1) the system needs careful mechanical mounting for calibration, though this can be addressed with customized programmable mounts, and (2) the scheme currently only works for random patterns and is inapplicable for other structured patterns like Hadamard and sinusoidal patterns.",
+   "gold_answer": "The main limitations are: (1) the system needs careful mechanical mounting for calibration, though this can be addressed with customized programmable mounts, and (2) the scheme currently only works for random patterns and is inapplicable for other structured patterns like Hadamard and sinusoidal patterns.",
    "document": "srep45325.pdf",
    "supporting_chunk": "The system needs careful mechanical mount for calibration, but this issue can be addressed effectively by designing a customized programmable mount for the DMD, galvanic mirrors and light source. Another limitation is that currently the scheme works for structuring light using random patterns, and is inapplicable for other patterns with specific structures, e.g. Hadamard and sinusoidal patterns."
  },
