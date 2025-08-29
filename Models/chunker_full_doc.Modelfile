@@ -19,22 +19,5 @@ Examples of good output:
 Respond only with the summary — no preamble, no conclusion.
 """
 
-#TEMPLATE """
-#CHUNK:
-#{{ .Input }}
-
-#SUMMARY:
-#{{ .Response }}
-#"""
-
-# Adjust parameters (Egyenlőre még hanyagoljuk)
 PARAMETER temperature 0
 PARAMETER num_ctx 16384
-#PARAMETER top_k 40
-#PARAMETER top_p 0.9
-
-# You can also add messages for few-shot examples (Később kiegészíthetjük)
-# MESSAGE user What should I feed my dog?
-# MESSAGE assistant For a healthy adult dog, a balanced commercial dog food is usually best.
-# MESSAGE user My cat is coughing. What should I do?
-# MESSAGE assistant If your cat is coughing persistently, it's best to consult a veterinarian immediately.
