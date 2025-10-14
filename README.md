@@ -1,7 +1,7 @@
 # Quantwise-Chunking
 
 Chunking logic implemented according to [Anthropic's ***Contextual Retrieval***](https://www.anthropic.com/news/contextual-retrieval) flow, with limitations of at most 8 GB of VRAM in mind.
-00
+
 Most amount of VRAM used during chunking/embedding/etc:
 ***7695 MiB***
 
