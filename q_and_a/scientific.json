@@ -3,7 +3,7 @@
     "question": "What were the two main components of the Gander research project, and what was the purpose of each?",
     "gold_answer": "The Gander project had two main components: (1) an empirical component focused on problem conceptualization, conducted as a mixed-method study with practitioners in industry to provide input for tool design, and (2) a development component focused on building an experimental code review platform incorporating eye-tracking to enable gaze-assisted assistance in code reviews.",
     "document": "A_Conceptual_Framework_and_Recommendations_for_Open_Data_and_Artifacts_in_Empirical_Software_Engineering.pdf",
-    "supporting_chunk": "The project had two main components; 1) an empirical component with focus on problem conceptualization, providing input to the tool design – conducted as a mixed-method study with practitioners in industry, and 2) a development component focused on development of an experimental code review platform incorporating eye-tracking."
+    "supporting_chunk": "The project had two main components; 1) an empirical component with focus on problem conceptualization, providing input to the tool design - conducted as a mixed-method study with practitioners in industry, and 2) a development component focused on development of an experimental code review platform incorporating eye-tracking."
   },
   {
     "question": "Which three typical categories of participants in socio-technical software engineering research does the framework identify, and why are they distinguished?",
