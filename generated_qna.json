@@ -1,0 +1,68 @@
+[
+    {
+        "question": "How does the STDM-OCT system achieve a 1-MHz A-scan rate, and what specific hardware configuration enables the Time-Division Multiplexing (TDM) aspect of this performance?",
+        "gold_answer": "The system achieves a 1-MHz A-scan rate by integrating Space-Time-Division Multiplexing (STDM), where Time-Division Multiplexing (TDM) effectively doubles the imaging rate. This is accomplished using a single spectrometer equipped with a beam splitter and two line-scan cameras. The cameras are triggered with identical but reversed sequences to fully utilize the duty cycle without dead time, allowing two continuous A-lines to be captured in one trigger period.",
+        "supporting_chunks": [
+            "cf9c4932434016213bdc8d8bcb5ea35d96ebf5fdef8bf065a4f5a41733cab90c",
+            "15b1bae1f79839dad95fb6f3e1ec83694bced71c46e7ee2597f48321b93b4d38"
+        ],
+        "document": "Ultrahigh-Speed_Spectral-Domain_Optical_Coherence_Tomography_up_to_1-MHz_A-Scan_Rate_Using_SpaceTime-Division_Multiplexing.pdf"
+    },
+    {
+        "question": "Describe the image merging process required for TDM in the STDM-OCT system and explain why a \"flipping step\" is necessary.",
+        "gold_answer": "The image merging process combines B-scan data captured by two cameras, where odd-numbered A-lines typically come from one camera and even-numbered lines from the other. A flipping step is necessary for the backward scanning phase because the raster scanning method involves a reversed scanning direction for the x-axis scanner; thus, the data must be flipped to spatially align with the forward scanning data to form a correct B-scan image.",
+        "supporting_chunks": [
+            "d3c74186766da8fc2f192329f10adfad3900c8f52ab3085782f6d19a2bfaa15e",
+            "84309a28efbe4a24cc08b12ceff3fd4ca0939a5e3cfd896d1850b36e57153299"
+        ],
+        "document": "Ultrahigh-Speed_Spectral-Domain_Optical_Coherence_Tomography_up_to_1-MHz_A-Scan_Rate_Using_SpaceTime-Division_Multiplexing.pdf"
+    },
+    {
+        "question": "What are the specific advantages of the proposed STDM-OCT system over conventional multi-camera and optical demultiplexer-based OCT systems in terms of cost and signal quality?",
+        "gold_answer": "The STDM-OCT system uses a single spectrometer configuration with multicameras, which eliminates the alignment errors inherent in multi-spectrometer systems and minimizes power loss compared to using multiple independent spectrometers. Furthermore, it offers enhanced SNR and sensitivity (greater than 130 dB) while avoiding the signal attenuation and reduced frequency interval resolution associated with optical demultiplexer-based methods.",
+        "supporting_chunks": [
+            "f695d58e8d83f480c85d2595ff9f7ba52e168f2dda303cd6f08f5cdf197be6eb",
+            "5f96211bae321b0f4fceaf85252f4c8c6f38e8926f034351e46c99b22121ff00",
+            "1698910a20c6de3626ade4bc5134e2509393b6534482b8b3eaa71924680f3903"
+        ],
+        "document": "Ultrahigh-Speed_Spectral-Domain_Optical_Coherence_Tomography_up_to_1-MHz_A-Scan_Rate_Using_SpaceTime-Division_Multiplexing.pdf"
+    },
+    {
+        "question": "How did the researchers verify the system's suitability for industrial applications, and what specific characteristics of the test sample made it appropriate for this evaluation?",
+        "gold_answer": "The researchers verified the system's suitability by inspecting a laboratory-customized multilayered Optical Thin Film (OTF). The OTF was appropriate because it contained distinct sublayers with different refractive indices and varying thicknesses (ranging from 100 to 250 micrometers) and had a large total surface area (68 x 140 mm), which allowed for the evaluation of the system's wide-field scanning capabilities and high-speed feasibility.",
+        "supporting_chunks": [
+            "30ef4eb27ca6c626de28ee911e759ccea6584e7e97ee7b34d54ef2072b94b02c",
+            "6acb69997389560461da28fd39232c6956f758e178e706e7bb02227859a71381"
+        ],
+        "document": "Ultrahigh-Speed_Spectral-Domain_Optical_Coherence_Tomography_up_to_1-MHz_A-Scan_Rate_Using_SpaceTime-Division_Multiplexing.pdf"
+    },
+    {
+        "question": "What is the achievable 3-D volume rate of the STDM-OCT system for a specific pixel range, and how can this rate be adjusted?",
+        "gold_answer": "The system achieves a 3-D volume rate of 8 volumes per second for an image range of 250 x 250 x 2048 pixels (corresponding to 9 x 4.5 x 5 mm). This volume rate is adjustable according to experimental conditions; for example, it can be set to 2 volumes per second for a 16 x 8 x 5 mm range or 0.5 volumes per second for a 30 x 16 x 5 mm range.",
+        "supporting_chunks": [
+            "4ea2f6384dd79e950f4f62a1dd74f65ac9807fad9e8607a908444bbba6eec2eb",
+            "f695d58e8d83f480c85d2595ff9f7ba52e168f2dda303cd6f08f5cdf197be6eb"
+        ],
+        "document": "Ultrahigh-Speed_Spectral-Domain_Optical_Coherence_Tomography_up_to_1-MHz_A-Scan_Rate_Using_SpaceTime-Division_Multiplexing.pdf"
+    },
+    {
+        "question": "How does the STDM-OCT system utilize Space-Division Multiplexing (SDM) to improve scanning capabilities, and what is the trade-off typically associated with this method that STDM addresses?",
+        "gold_answer": "The system utilizes Space-Division Multiplexing (SDM) by employing multiscanners (x-axis and y-axis galvanometer scanners) in separate sample arms to cover a wider scanning range simultaneously. A typical trade-off with multispatial scanning is reduced axial resolution due to higher channel counts; however, STDM-OCT mitigates this by maintaining high resolution through precise path length control and regulating the physical optical path difference between the interferometers.",
+        "supporting_chunks": [
+            "5f96211bae321b0f4fceaf85252f4c8c6f38e8926f034351e46c99b22121ff00",
+            "cf9c4932434016213bdc8d8bcb5ea35d96ebf5fdef8bf065a4f5a41733cab90c",
+            "15b1bae1f79839dad95fb6f3e1ec83694bced71c46e7ee2597f48321b93b4d38",
+            "1698910a20c6de3626ade4bc5134e2509393b6534482b8b3eaa71924680f3903"
+        ],
+        "document": "Ultrahigh-Speed_Spectral-Domain_Optical_Coherence_Tomography_up_to_1-MHz_A-Scan_Rate_Using_SpaceTime-Division_Multiplexing.pdf"
+    },
+    {
+        "question": "Detail the specific limitations of previous high-speed OCT methods (streak-mode OCT and parallel OCT) that the developed STDM-OCT system aims to overcome.",
+        "gold_answer": "Streak-mode OCT suffers from significantly degraded Signal-to-Noise Ratio (SNR) and reduced duty cycle utilization due to non-uniform camera exposure. Parallel OCT systems, while fast, face non-negligible limitations regarding sensitivity and imaging depth. The STDM-OCT system addresses these by providing enhanced SNR, high sensitivity (over 130 dB), and extended imaging depth (over 4 mm) in a cost-effective setup.",
+        "supporting_chunks": [
+            "5f96211bae321b0f4fceaf85252f4c8c6f38e8926f034351e46c99b22121ff00",
+            "f695d58e8d83f480c85d2595ff9f7ba52e168f2dda303cd6f08f5cdf197be6eb"
+        ],
+        "document": "Ultrahigh-Speed_Spectral-Domain_Optical_Coherence_Tomography_up_to_1-MHz_A-Scan_Rate_Using_SpaceTime-Division_Multiplexing.pdf"
+    }
+]

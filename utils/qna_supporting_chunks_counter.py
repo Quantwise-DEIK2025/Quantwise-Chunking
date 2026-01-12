@@ -35,5 +35,5 @@ def count_frequencies_from_file(file_path):
         print(f"An error occurred: {e}")
 
 if __name__ == "__main__":
-    file_name = "q_and_a/Gemini/scientific.json" 
+    file_name = "q_and_a/Gemini/scientific_multi_chunk.json" 
     count_frequencies_from_file(file_name)
