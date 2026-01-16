@@ -84,7 +84,7 @@ def calculate_advanced_retrieval_metrics(df: pd.DataFrame, k: int = 5) -> pd.Dat
     metrics_columns = results_df.apply(calculate_row_metrics, axis=1)
     
     # Concatenate original data with new metrics
-    return pd.concat([results_df, metrics_columns], axis=1)
+    return metrics_columns
 
 # --- Verification ---
 data = {
@@ -99,6 +99,8 @@ data = {
     ]
 }
 df_test = pd.DataFrame(data)
+df_test = df_test.set_index('question_id')
+
 df_final = calculate_advanced_retrieval_metrics(df_test, k=4)
 
-print(df_final.drop(columns=['retrieved_hashes', 'supporting_hashes']))
+print(df_final)
